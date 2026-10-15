@@ -3309,7 +3309,6 @@ function renderMenu(){
     </div>
     <div class="menu">
       <div class="menu-header">
-        <div class="brand">HORARIO 4ºA ESO</div>
         <div class="stamp">CONFIDENCIAL</div>
         <h1 class="brand-title">The Criminalist</h1>
         <div class="tagline">Archivo de Casos</div>
