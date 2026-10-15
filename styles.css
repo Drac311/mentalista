@@ -576,3 +576,63 @@ body{background:var(--bg);color:var(--text);font-family:'Inter',sans-serif;
   .char-grid{grid-template-columns:repeat(2,1fr)}
   .login-tab{font-size:9px;padding:8px 4px}
 }
+
+/* ---------- BRAND HEADER ---------- */
+.menu-header .brand{
+  font-family:'Special Elite',monospace;
+  color:var(--gold-soft);
+  letter-spacing:14px;
+  font-size:12px;
+  text-transform:uppercase;
+  opacity:.75;
+  margin-bottom:22px;
+  padding-bottom:8px;
+  display:inline-block;
+  position:relative;
+}
+.menu-header .brand::before,
+.menu-header .brand::after{
+  content:'';
+  position:absolute;
+  top:50%;
+  width:50px;
+  height:1px;
+  background:linear-gradient(90deg,transparent,var(--border-gold));
+}
+.menu-header .brand::before{ right:100%; margin-right:14px; }
+.menu-header .brand::after{ left:100%; margin-left:14px;
+  background:linear-gradient(90deg,var(--border-gold),transparent); }
+
+.menu-header .brand-title{
+  font-family:'Special Elite',monospace;
+  font-size:clamp(46px,9vw,108px);
+  color:var(--gold);
+  letter-spacing:8px;
+  margin-bottom:6px;
+  line-height:1;
+  text-shadow:
+    0 0 30px rgba(212,160,23,.4),
+    0 0 80px rgba(212,160,23,.15),
+    0 4px 0 rgba(0,0,0,.9);
+  position:relative;
+}
+.menu-header .brand-title::after{
+  content:'';
+  display:block;
+  width:min(420px,80%);
+  height:2px;
+  margin:14px auto 0;
+  background:linear-gradient(90deg,transparent,var(--gold),transparent);
+  opacity:.7;
+}
+
+.menu-header .tagline{
+  font-family:'Cormorant Garamond',serif;
+  font-style:italic;
+  color:var(--text-dim);
+  font-size:clamp(14px,1.6vw,20px);
+  letter-spacing:6px;
+  text-transform:uppercase;
+  margin-bottom:14px;
+  opacity:.85;
+}
