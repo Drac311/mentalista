@@ -3309,9 +3309,10 @@ function renderMenu(){
     </div>
     <div class="menu">
       <div class="menu-header">
+        <div class="brand">HORARIO 4ºA ESO</div>
         <div class="stamp">CONFIDENCIAL</div>
-        <div class="subtitle">Horario 4ºA ESO</div>
-        <h1>Archivo de Casos</h1>
+        <h1 class="brand-title">The Criminalist</h1>
+        <div class="tagline">Archivo de Casos</div>
         <div class="agents">Agentes Alegando &amp; Alech</div>
         <div class="rank-card">
           <div class="rank-badge">${rank.icon}</div>
@@ -3355,7 +3356,6 @@ function renderMenu(){
     card.addEventListener('click', () => { state.caseId = card.dataset.case; state.view = 'briefing'; render(); });
   });
 }
-
 function renderBriefing(){
   disposeWorld();
   const c = CASES.find(x => x.id === state.caseId);
